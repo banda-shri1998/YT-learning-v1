@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+    /*const products={
+      name: 'socks',
+      price: 10
+    };
+    console.log(products)
+    console.log(products.name);
+    console.log(products.price);
+
+    products.name='Shoe Socks';
+    console.log(products);
+
+    products.newDemo='Dummy'
+    console.log(products);
+
+    delete products.newDemo;
+    console.log(products); */
+
+    const pro2 = {
+      name: 'shirt',
+      'delivery-time': '1 day',
+      rating:{
+        stars: 4,
+        reviews: 10
+      },
+      function : function f1(){
+        console.log('function in object');
+      }
+    };
+    console.log(pro2);
+    console.log(pro2.name);
+    console.log(pro2['name']);
+    console.log(pro2['delivery-time']);
+    // console.log(pro.delivery-time);  considers Delivery minus time then use above case
+    
+    console.log(pro2.rating);
+    console.log(typeof console.log);
+
+    console.log( typeof JSON.stringify(pro2));
+
+    const jsonString=JSON.stringify(pro2);
+    console.log(JSON.parse(jsonString));
+
+    console.log('Hello'.length);
+    console.log('Hello'.toUpperCase());// 'Hello' will be considered as Object
+
+    const object1= {
+      message : 'Hello'
+    }
+
+    const object2=object1
+
+    object2.message='Goodbye'
+    console.log(object1.message);
+
+    const object3={
+      message : 'Hello'
+    }
+
+    console.log(object3===object1);
+    console.log(object2===object1);
+
+    const object4={
+      message : 'Good Job!',
+      price: 799
+    };
+
+    //both works some prefer using lower line Using Destructuring
+    //const message = object4.message;
+    const { message, price } = object4;
+    console.log(message);
+    console.log(price);
+
+    const object5={
+      //message : message,  called shorthand property
+      message,
+      // method : function fun1() {
+      //   console.log('method');
+      // }  called shorthand Method
+      fun1(){
+        console.log('method');
+      }
+    };
+    
+    console.log(object5);
+    </script>
+  </body>
+</html>
