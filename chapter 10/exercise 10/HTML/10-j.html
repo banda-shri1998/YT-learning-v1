@@ -1,42 +1,13 @@
 <!DOCTYPE html>
-<title>10-I</title>
-<html>
-  <head></head>
-  <body>
-
-		<style>
-
-			body{
-				background-color: black;
-				margin-right: 10px;
-				color: white;
-				font-family: Arial, Helvetica, sans-serif;
-				
-			}
-
-			button{
-				background-color:rgb(51, 51, 51);
-				color: white;
-				border: none;
-				height: 60px;
-				width: 60px;
-				border-radius: 100px;
-				padding: 1px 6px;
-				cursor: pointer;
-				font-size: x-large;
-			}
-			p{
-				table-layout: auto;
-				margin: 10px;
-        width: 200px;
-        height: 50px;
-			}
-			.symbol{
-				background-color: orange;
-			}
-		</style>
-
-    <p class="output"></p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10-J</title>
+  <link rel="stylesheet" href="../CSS/10-j.css">
+</head>
+<body>
+  <p class="output"></p>
     <p>
       <button onclick="
         updateCalculation('1');
@@ -123,24 +94,6 @@
         localStorage.setItem('calculation', calculation);
       ">Clear</button>
     </p>
-
-    <script>
-      let calculation = localStorage.getItem('calculation') || '';
-
-      function updateCalculation(value) {
-        calculation += value;
-        output.innerHTML= calculation;
-
-        localStorage.setItem('calculation', calculation);
-      }
-
-      const output=document.querySelector('.output');
-
-      // Optional: you can also create a function in order
-      // to reuse this code.
-      function saveCalculation() {
-        localStorage.setItem('calculation', calculation);
-      }
-    </script>
-  </body>
+    <script src="../JS/10-j.js"></script>
+</body>
 </html>
