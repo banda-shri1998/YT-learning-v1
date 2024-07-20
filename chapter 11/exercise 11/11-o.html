@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11-O</title>
+</head>
+<body>
+  <script>
+    const word=['hello','world','search','good'];
+    const word1=['not','found'];
+    function occ(words){
+      for(let i=0;i<words.length;i++){
+        if(words[i]==='search' ){
+          return i;
+        }
+        else{
+          if(i<word.length-1 && words[i]!=='search' ){
+            return -1;
+          }
+        }
+      }
+    }
+    console.log(occ(word))
+  console.log(occ(word1));
+  </script>
+</body>
+</html>

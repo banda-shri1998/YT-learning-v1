@@ -1,26 +1,3 @@
-//const todoarrray=['hello','world','com']
-const input =document.querySelector('.input2');
-const input1=document.querySelector('.input1');
-
-function renderTodoList(){
-
-  let todoHtml=''
-  for(let i=0;i<todoarrray.length;i++){
-    const todo=todoarrray[i];
-    const html=`<p>${todo}</p>`
-    todoHtml+=html;
-  }
-  document.querySelector('.container').innerHTML=todoHtml;
-  console.log(todoarrray);
-  console.log(todoHtml);
-}
-
-function addPractice(){
-  const out=document.querySelector('.container');
-  out.innerHTML=input1.value;
-  input1.value='';
-}
-
 const todoarrray = [
   {
     name:'dinner',

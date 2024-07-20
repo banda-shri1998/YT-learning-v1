@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11-M</title>
+</head>
+<body>
+  <script>
+    function maxMin(nums){
+      const result={
+        min:null,
+        max:null
+      }
+      for(let i=0;i<nums.length;i++){
+        if(result.max>nums[i] || result.max===null){
+          result.max=nums[i];
+        }
+        if(result.min<nums[i] || result.min===null){
+          result.min=nums[i];
+        }
+      }
+      console.log(result.min+'\n'+ result.max);
+    }
+
+    maxMin([]);
+    maxMin([3]);
+  </script>
+</body>
+</html>
