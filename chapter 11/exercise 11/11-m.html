@@ -6,6 +6,7 @@
   <title>11-M</title>
 </head>
 <body>
+  <p>Open Console tab for output</p>
   <script>
     function maxMin(nums){
       const result={
@@ -13,18 +14,19 @@
         max:null
       }
       for(let i=0;i<nums.length;i++){
-        if(result.max>nums[i] || result.max===null){
+        if(result.max<nums[i] || result.max===null){
           result.max=nums[i];
         }
-        if(result.min<nums[i] || result.min===null){
+        if(result.min>nums[i] || result.min===null){
           result.min=nums[i];
         }
       }
-      console.log(result.min+'\n'+ result.max);
+      console.log(result.max+'\n'+ result.min);
     }
 
     maxMin([]);
-    maxMin([3]);
+    maxMin([3,5,6,3,2,0]);
   </script>
+  <a href="./11-n.html">Next exercise 11-N</a>
 </body>
 </html>

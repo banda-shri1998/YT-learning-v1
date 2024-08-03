@@ -6,23 +6,24 @@
   <title>11-O</title>
 </head>
 <body>
+  <p>Open Console tab for output</p>
   <script>
     const word=['hello','world','search','good'];
     const word1=['not','found'];
+    let index=-1;
     function occ(words){
       for(let i=0;i<words.length;i++){
         if(words[i]==='search' ){
-          return i;
-        }
-        else{
-          if(i<word.length-1 && words[i]!=='search' ){
-            return -1;
-          }
+          index= i;
         }
       }
     }
-    console.log(occ(word))
-  console.log(occ(word1));
+    occ(word)
+    console.log(index);
+    index=-1;
+    occ(['not','found']);
+    console.log(index);
   </script>
+  <a href="./11-p.html">Next exercise 11-P</a>
 </body>
 </html>

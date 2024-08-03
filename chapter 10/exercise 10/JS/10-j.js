@@ -7,7 +7,7 @@ function updateCalculation(value) {
   localStorage.setItem('calculation', calculation);
 }
 
-const output=document.querySelector('.output');
+const output=document.querySelector('.output-text');
 
 // Optional: you can also create a function in order
 // to reuse this code.

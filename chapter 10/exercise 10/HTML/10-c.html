@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>10-C</title>
 </head>
 <body>
+  <p>Open Console Tab For Outputs</p>
   <button class="js-button">Test</button>
-
   <script>
-    const demo=document.querySelector('.js-button')
-    if(!demo.classList.contains('js-button')){
+    const demo = document.querySelector('.js-button')
+    //console.log(demo.classList.contains('js-button'));
+    if(demo.classList.contains('js-button')){
       console.log(true);
     }
+    else{
+      console.log(false);
+    }
   </script>
+  <p>
+    <a href="./10-d.html">Next Exercise 10-D</a>
+  </p>
 </body>
 </html>

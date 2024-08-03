@@ -26,36 +26,45 @@
 				font-size: x-large;
 			}
 			p{
-				table-layout: auto;
+				table-layout:auto;
 				margin: 10px;
-        width: 200px;
+        width: 250px;
         height: 50px;
+        padding: 1px 6px;
 			}
 			.symbol{
 				background-color: orange;
 			}
+      .output{
+        background-color: grey;
+        margin-left: 1cm;
+        font-size: xx-large;
+        border-radius: 10px;
+        padding-top: 10px;
+      }
 		</style>
 
     <p class="output"></p>
-    <p>
+    <ul>
+
       <button onclick="
         updateCalculation('1');
-      ">1</button>
+        ">1</button>
 
       <button onclick="
         updateCalculation('2');
-      ">2</button>
+        ">2</button>
 
       <button onclick="
         updateCalculation('3');
-      ">3</button>
+        ">3</button>
 
       <button onclick="
         updateCalculation(' + ');
-      " class="symbol">+</button>
-    </p>
+        " class="symbol">+</button>
+    </ul>
 
-    <p>
+    <ul>
       <button onclick="
         updateCalculation('4');
       ">4</button>
@@ -71,9 +80,9 @@
       <button onclick="
         updateCalculation(' - ');
       " class="symbol">-</button>
-    </p>
+    </ul>
 
-    <p>
+    <ul>
       <button onclick="
         updateCalculation('7');
       ">7</button>
@@ -89,9 +98,9 @@
       <button onclick="
         updateCalculation(' * ');
       " class="symbol">*</button>
-    </p>
+    </ul>
 
-    <p>
+    <ul>
       <button onclick="
         updateCalculation('0');
       ">0</button>
@@ -112,17 +121,17 @@
       <button onclick="
         updateCalculation(' / ');
       " class="symbol">/</button>
-    </p>
+    </ul>
 
-    <p>
+    <ul>
       <button onclick="
         calculation = '';
         output.innerHTML= calculation;
 
         // Remember to save the calculation here.
         localStorage.setItem('calculation', calculation);
-      ">Clear</button>
-    </p>
+      " class="clear">Clear</button>
+    </ul>
 
     <script>
       let calculation = localStorage.getItem('calculation') || '';
@@ -142,5 +151,7 @@
         localStorage.setItem('calculation', calculation);
       }
     </script>
+
+    <p><a href="./10-j.html">Next Exercise 10-J</a></p>
   </body>
 </html>

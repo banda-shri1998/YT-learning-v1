@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11-T</title>
+</head>
+<body>
+  <p>Open Console tab for output</p>
+  <script>
+    //const foods=[]
+    let res=[]
+    function removeEggs(foods){
+      //let foods=demo.reverse();
+      let occ=0;
+      debugger
+      for(let i=0;i<foods.length;i++){
+        let item=foods[i];
+        if(item==='egg' && occ<2){
+          occ++;
+          continue
+        }
+        res.push(item);
+      }
+      console.log(res.reverse());
+      console.log(foods);
+    }
+    removeEggs(['egg','apple','egg','egg','HAM'].reverse());
+  </script>
+  <a href="./11-u.html">Next exercise 11-U</a>
+</body>
+</html>

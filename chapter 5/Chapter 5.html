@@ -1,0 +1,20 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch5 Variables</title>
+  </head>
+  <body>
+    cart Quantity
+    <p>
+      <button onclick="console.log('Cart Quantity:'+cartItems)">Show Quantity</button>
+    <button onclick="cartItems=cartItems+1; console.log('Cart Quantity:'+cartItems)">add to cart</button>
+    <button onclick="cartItems=cartItems+2; console.log('Cart Quantity:'+cartItems)">+2</button>
+    <button onclick="cartItems=cartItems+3; console.log('Cart Quantity:'+cartItems)">+3</button>
+    <button onclick="cartItems=0; console.log('cart reset successfull\nCart Items:'+cartItems)">Reset Cart</button>
+    </p>
+    <script>
+      let cartItems = 0
+    </script>
+  </body>
+</html>

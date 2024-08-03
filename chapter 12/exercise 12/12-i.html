@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12-I</title>
+</head>
+<body>
+  <button class="add" onclick="add()">Add</button>
+  
+  <button class="remove" onclick="remove()">remove</button>
+  <script>
+    let msg=2
+
+    setInterval(function(msg){
+      if(msg===0){
+        add()
+      }
+      else if(msg<0){
+        remove()
+      }
+      else if(msg>0){
+        return
+      }
+    },1000);
+    const a=document.querySelector('.add');
+    function add(){
+      msg+=1
+      document.title=`(${msg}) new Messeges`
+    }
+    function remove(){
+      if(msg===0){
+        document.title='App'
+      }
+      else if(msg>0){
+        msg-=1
+        const r=document.querySelector('.remove');
+        document.title=`(${msg}) new Messeges`
+      }
+    }
+  </script>
+</body>
+</html>

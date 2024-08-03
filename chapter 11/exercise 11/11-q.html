@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11-Q</title>
+</head>
+<body>
+  <p>Open Console tab for output</p>
+  <script>
+    let index=-1;
+    function findIndex(array,word){
+      for(let i=0;i<array.length;i++){
+        if(array[i]===word){
+          index=i;
+          break;
+        }
+      }
+      console.log(index);
+    }
+    findIndex(['green','red','blue','red'],'red');
+    index=-1;
+    findIndex(['green','red','blue','red'],'yellow');
+  </script>
+  <a href="./11-r.html">Next exercise 11-R</a>
+</body>
+</html>
