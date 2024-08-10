@@ -14,11 +14,11 @@
 
     <h3>exercise 12-E</h3>
     <button class="addToCart" onclick="addE()">Add to cart</button>
-    <p class="output"></p>
+    <p class="outputE"></p>
 
     <h3>exercise 12-F</h3>
     <button onclick="addF()">add to cart</button>
-    <p class="output"></p>
+    <p class="outputF"></p>
 
     <h3>exercise 12-G</h3>
     <p>check the changes in Title of Tab</p>
@@ -62,7 +62,7 @@
 
       //Exercise 12-E
 
-      const d=document.querySelector('.output');
+      const d=document.querySelector('.outputE');
       function addE(){
         d.innerHTML='Added';
         setTimeout(()=>{
@@ -74,7 +74,7 @@
 
       let interID;    
       function addF(){
-        const o=document.querySelector('.output');
+        const o=document.querySelector('.outputF');
         o.innerHTML='added';
 
         clearTimeout(interID);

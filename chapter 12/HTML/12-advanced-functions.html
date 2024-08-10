@@ -5,7 +5,7 @@
   </head>
   <body>
 
-    <button onclick="" class="btn">Click</button>
+    <button class="btn">Click</button>
     <script>
       /*
       const btn = document.querySelector('.btn');
@@ -55,17 +55,18 @@
         console.log('hello4');
       })
 
+      */
       setTimeout(function(){
         console.log('timeout');
-        console.log('time2');
+        // console.log('time2');
         }, 3000);
       console.log('next liine');
       
       setInterval(function(){
+        debugger
         console.log('interval')
       },4000)
       console.log('next liine2');
-      */
 
       /*
       [
@@ -108,7 +109,7 @@
           
         }
       }
-      */
+      
 
       console.log(
         [1,1,3].map((value,index)=>{
@@ -129,6 +130,8 @@
           return value>=0;
         })
       );
+
+      */
     </script>
   </body>
 </html>
