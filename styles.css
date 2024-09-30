@@ -1,0 +1,242 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  background: #fff8f0;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+h1 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #190d37;
+  margin-top: 10px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 40px;
+  color: black;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+}
+
+.bigtext {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #331e6a;
+}
+
+#hero {
+  display: flex;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.hero-img {
+  width: 50%;
+}
+
+.hero-profile {
+  width: 100%;
+}
+
+.hero-info {
+  width: 50%;
+  padding: 32px 20px 0 0;
+}
+
+.contact-info {
+  display: flex;
+  color: black;
+  line-height: 14px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.ema {
+  text-align: left;
+}
+
+.phone {
+  text-align: right;
+}
+
+.greeting {
+  margin: 52px 0 0 0;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.contact-button {
+  color: white;
+  text-decoration: none;
+  width: 138px;
+}
+.contact-button button,.subscribe {
+  background-color: #2f2f2f;
+  width: 100%;
+  height: 48px;
+  padding: 12px auto;
+  font-size: 1rem;
+  margin-top: 20px;
+  color: white;
+  border-radius: 100px;
+  font-family: "inter", sans-serif;
+}
+
+#whatIDo{
+  margin: 42px auto;
+  max-width: 1080px;
+  text-align: center;
+}
+
+.intro{
+  margin:8px auto ;
+  width: 700px;
+  font-size: 18px;
+  text-transform: none;
+  color: black;
+}
+
+.smalltext{
+  text-transform: uppercase;
+  color: blue;
+  margin-bottom: 8px;
+}
+
+.skills{
+  margin-top: 48px;
+  display: flex;
+  width: auto;
+  gap: 30px;
+}
+
+.dev-skills{
+  background-color: white;
+  border-radius:10px ;
+  width: 340px;
+  padding: 20px;
+  line-height: 24px;
+}
+
+.dev-skills h4{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#projects{
+  max-width: 1080px;
+  margin: 42px auto;
+  text-align: center;
+}
+
+.project{
+  display: grid;
+  column-gap: 19px;
+  grid-template-columns: 1fr 5fr;
+  text-align: left;
+  margin: 40px auto;
+}
+
+.project-logo{
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 160px;
+  margin-top: 20px;
+  background-color: aqua;
+}
+
+.project-details{
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px;
+  color: #55206D;
+  font-family: "Inter",sans-serif;
+}
+
+.project-name{
+  font-weight: 700;
+  line-height: 27px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Poppins",sans-serif;
+}
+
+.project-details a{
+  color: #6A87A3;
+}
+
+#pricing{
+  max-width: 1080px;
+  text-align: center;
+  margin: 48px auto;
+}
+
+.pricing{
+  text-align: left;
+}
+
+.pricing img{
+  margin-right:10px;
+  width: 15px;
+  mix-blend-mode: normal;
+  background-color: none;
+}
+
+.plan-details{
+  font-family: Poppins,sans-serif;
+  padding: 10px 20px;
+  opacity:60%;
+}
+.price span{
+  font-size: xx-large;
+  opacity: 200%;
+  font-weight: 700;
+  margin: 5px 10px;
+  font-family: Poppins,sans-serif;
+}
+
+.pricing:nth-child(even){
+  background-color: yellow;
+}
+
+.services{
+  list-style-type: none;
+  align-items: left;
+  justify-items: left;
+  padding: 0;
+  margin: auto 20px;
+}
+.subscribe:hover{
+  background-color: #f2f2f2;
+  color:black;
+} 
+
+#footer
+{
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
