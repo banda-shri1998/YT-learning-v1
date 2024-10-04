@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12-C</title>
+</head>
+<body>
+  <button class="clicked" onclick="clicking()">start</button>
+  <script>
+    let isClicked=false
+    function clicking(){
+      const c=document.querySelector('.clicked');
+      setTimeout(function(){
+        c.innerHTML='finished!';
+      }, 1000); 
+    }
+  </script>
+</body>
+</html>

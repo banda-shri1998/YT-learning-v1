@@ -1,0 +1,70 @@
+body{
+  background-color: black;
+  margin-right: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.num-text,.symbol{
+  background-color:rgb(51, 51, 51);
+  color: white;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  /* padding: 1px 6px; */
+  cursor: pointer;
+  font-size: x-large;
+  margin-left: auto;
+  text-align: center;
+  line-height: 17px;
+}
+
+.num-text-clear{
+  background-color:rgb(51, 51, 51);
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 30%;
+}
+p{
+  table-layout: auto;
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+}
+.symbol{
+  background-color: orange;
+}
+
+.container{
+  border: 1px solid gray;
+  /* padding: -10px; */
+  border-radius: 5px;
+  position: relative;
+}
+
+.calc-container{
+  display: grid;
+  padding: 5px;
+  row-gap: 5px;
+  column-gap: 6px;
+  grid-template-columns: auto auto auto auto;
+
+
+}
+
+.output-text{
+  background-color: gray;
+  padding: 3px;
+  color: black;
+  font-size: xx-large;
+  text-align: right;
+  line-height: -1px;
+  
+}

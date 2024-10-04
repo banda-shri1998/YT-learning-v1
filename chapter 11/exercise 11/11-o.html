@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11-O</title>
+</head>
+<body>
+  <p>Open Console tab for output</p>
+  <script>
+    const word=['hello','world','search','good'];
+    const word1=['not','found'];
+    let index=-1;
+    function occ(words){
+      for(let i=0;i<words.length;i++){
+        if(words[i]==='search' ){
+          index= i;
+        }
+      }
+    }
+    occ(word)
+    console.log(index);
+    index=-1;
+    occ(['not','found']);
+    console.log(index);
+  </script>
+  <a href="./11-p.html">Next exercise 11-P</a>
+</body>
+</html>

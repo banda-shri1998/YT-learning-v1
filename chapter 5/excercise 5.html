@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excercise 5</title>
+</head>
+<body>
+  <script>
+    let name='Shri'
+    console.log(name); // 5a
+    console.log(`My name is ${name}`); //5b
+    const c=5;
+    const b=3;
+    const s=9;
+    let cost=0
+    cost=(c*1)+(b*2)+(s*1) // 5c
+    console.log(`Total cost=${cost}`); //5d
+    let tax=cost*0.1;
+    console.log('total Bill after discount:'+(cost+tax)) //5e
+    console.log(`Tax(10%): $${tax}`); //5f
+    console.log('total Bill after discount:'+(cost+tax)) //5g
+    console.log();
+    
+    
+  </script>
+  <p>
+    cart Quantity
+    <p>  
+      <button onclick="cartItems=cartItems+1; console.log('Cart Quantity:'+cartItems)">
+        add to cart
+      </button>
+      <button onclick="cartItems=cartItems+2; console.log('Cart Quantity:'+cartItems)">
+        +2
+      </button>
+      <button onclick="cartItems=cartItems+3; console.log('Cart Quantity:'+cartItems)">
+        +3
+      </button>
+      <button onclick="cartItems+=4; console.log('Cart Quantity:'+cartItems)">
+        +4
+      </button> <!-- 5h -->
+      <button onclick="cartItems+=5; console.log('Cart Quantity:'+cartItems)">
+        +5
+      </button><!-- 5h -->
+      
+    </p>
+    <p>
+      <button onclick="cartItems--; console.log('Cart Quantity:'+cartItems);">
+        remove from cart
+      </button>   <!-- 5i -->
+      <button onclick="if(cartItems>0){
+        cartItems-=2;
+      }
+        else{
+          cartItems=cartItems
+        }
+      console.log('Cart Quantity:'+cartItems)">
+      -2</button>
+      <!-- 5j -->
+      <button onclick="if(cartItems>0){
+        cartItems-=3;
+      }
+        else{
+          cartItems=cartItems
+        }
+      console.log('Cart Quantity:'+cartItems)">-3</button>
+      <!-- 5j -->
+      <p>
+        <button onclick="console.log('Cart Quantity:'+cartItems)">Show Quantity
+        </button>
+        <button onclick="cartItems=0; console.log('cart reset successfull\nCart Items:'+cartItems)">Reset Cart</button>
+      </p>
+    <script>
+      let cartItems = 0
+      </script>    
+  </p>
+</body>
+</html>

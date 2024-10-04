@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 9G</title>
+</head>
+<body>
+  <p>Amazon Shopping Calculator</p>
+
+  <p>Orders Under $40 = +$10 shipping.</p>
+
+  <p>Orders over $40 = Free shipping.</p>
+
+  <input placeholder="Cost of Order" type="number" onkeydown="Changed(event)">
+  <button onclick="calc()">Calculate</button>
+  <p class="result"></p>
+
+  <script>
+    function Changed(event){
+      if(event.key == "Enter"){
+        calc();
+      }
+    }
+
+    function calc()
+    {
+      const val= parseFloat(document.querySelector('input').value);
+      if(val<40){
+        document.querySelector('.result').innerHTML= `Free Shipping Total Cost = ${val}`
+      }
+      else{
+        document.querySelector('.result').innerHTML= `Additional $10 Charges Total Cost= ${val+10}`
+      }
+    }
+
+  </script>
+</body>
+</html>

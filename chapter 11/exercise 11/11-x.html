@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11-X</title>
+  <link rel="stylesheet" href="11-x.css">
+</head>
+<body>
+  <p>To do List Practice 1</p>
+  <input type="text" class="input" placeholder="TODO name">
+  <button onclick="console.log(document.querySelector('.input').value)" >Add</button>
+
+  <p>to Do list Practice 2</p>
+  <input placeholder="Todo name" type="text" class="input1">
+  <button onclick="addPractice()">Add</button>
+  <p class="container"></p>
+
+  <p>To Do list</p>
+  <div class="todo-grid">
+    <input placeholder="Todo name" type="text" class="input-name">
+    <input type="date" class="input-date">
+    <button class="add" onclick="addToList()">Add</button> 
+  </div>
+  <p class="warning"></p>
+
+  <div class="output todo-grid"></div>
+
+
+  <script src="11-x.js">
+  </script>
+  <p>
+    <a href="../">Home</a>
+  </p>
+</body>
+</html>

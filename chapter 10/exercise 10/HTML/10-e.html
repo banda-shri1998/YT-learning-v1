@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>10-E</title>
+</head>
+<body>
+	<style>
+			.btn{
+					background-color: black;
+					color: white;
+					cursor: pointer;
+					padding: 15px;
+					border: none;
+					font-weight: bold;
+					border-radius: 10px;
+			}
+			.is-toggled{
+					background-color: lightgrey;
+					color:black;
+					cursor: pointer;
+			}
+	</style>
+
+		<button class="btn one " onclick="
+		const demo=document.querySelector('.one');
+			if(demo.classList.contains('is-toggled')){
+				demo.classList.remove('is-toggled');
+			}
+			else{
+				demo.classList.add('is-toggled');    
+			}">Gaming</button>
+
+		<button class="btn two " onclick="
+		const demo2=document.querySelector('.two');
+			if(demo2.classList.contains('is-toggled')){
+				demo2.classList.remove('is-toggled');
+			}
+			else{
+				demo2.classList.add('is-toggled');    
+			}">Music</button>
+			
+		<button class="btn three " onclick="const demo3=document.querySelector('.three');
+		if(demo3.classList.contains('is-toggled')){
+				demo3.classList.remove('is-toggled');
+		}
+		else{
+				demo3.classList.add('is-toggled');    
+		}">Tech</button>
+
+		<p>
+			<a href="./10-f.html">Next Exercise 10-F</a>
+		</p>
+  </body>
+</html>
