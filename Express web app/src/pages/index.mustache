@@ -129,7 +129,22 @@
 
       <!-- jobs List -->
       <div class="mt-4 d-md-none">
-        <div class="card my-4">
+
+        {{#jobs}}
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title"><a href="/jobs/{{id}}">{{title}}</a></h5>
+            <h6 class="card-subtitle ny-1 text-body-secondary">
+              {{location}} , {{salary}}
+            </h6>
+            <small class="card-text text-body-secondary">
+              Posted {{posted}}
+            </small>
+          </div>
+        </div>
+
+        {{/jobs}}
+        <!-- <div class="card my-4">
           <div class="card-body">
             <h5 class="card-title">Frontend Developer</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">
@@ -137,9 +152,10 @@
             </h6>
             <small class="card-text"> Posted March 13, 2023</small>
           </div>
-        </div>
+        </div> -->
       </div>
 
+      <!--
       <div class="mt-4 d-md-none">
         <div class="card my-4">
           <div class="card-body">
@@ -174,30 +190,28 @@
             <small class="card-text"> Posted March 13, 2023</small>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- jobs Table -->
       <div class="d-none d-md-block mt-4 col-lg-10 offset-lg-1">
         <table class="table table-striped table-bordered w-100">
           <tr class="table-primary text-center">
-            <th class="" rowspan="2">Job Title</th>
-            <th class="" colspan="2">Location</th>
-            <th class="" rowspan="2">Salary</th>
-            <th class="" rowspan="2">Posted On</th>
-          </tr>
-          <tr class="table-primary text-center">
-            <th class="">City</th>
-            <th class="">Country</th>
-          </tr>
-          <tr class="jobs-data-row">
-            <td>Frontend Developer</td>
-            <td>Bengaluru</td>
-            <td>India</td>
-            <td>₹12,00,000</td>
-            <td>Mar 13, 2023</td>
+            <th>Job Title</th>
+            <th>Location</th>
+            <th>Salary</th>
+            <th>Posted On</th>
           </tr>
 
+          {{#jobs}}
           <tr class="jobs-data-row">
+            <td><a href="/jobs/{{id}}">{{title}}</a></td>
+            <td>{{location}}</td>
+            <td>{{salary}}</td>
+            <td>{{posted}}</td>
+          </tr>
+          {{/jobs}}
+
+          <!--<tr class="jobs-data-row">
             <td>Full Stack Developer</td>
             <td>New Delhi</td>
             <td>India</td>
@@ -218,12 +232,12 @@
             <td colspan="2">Remote</td>
             <td>$85,000</td>
             <td>Sep 19, 2022</td>
-          </tr>
+          </tr>-->
         </table>
       </div>
     </div>
 
-    <!-- application -->
+    <!-- application 
     <div class="container px-4 mb-5">
       <h2 class="display-5 fw-bold text-body-emphasis lh-1 m-3 text-center">
         Submit Your Application
@@ -321,7 +335,7 @@
           </div>
         </form>
       </div>
-    </div>
+    </div>-->
 
     <!-- footer -->
     <div class="container">
