@@ -7,11 +7,13 @@ const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const mustachExpress = require("mustache-express");
 const { error } = require("console");
+const { match } = require("assert");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use("/images", express.static(path.join(__dirname, "/images")));
+app.use("/jobs/images", express.static(path.join(__dirname, "/images")));
 
 app.set("views", path.join(__dirname, "pages"));
 app.set("view engine", "mustache");
@@ -40,6 +42,8 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+app.use("/images", express.static(path.join(__dirname, "/images")));
+
 app.post("/jobs/:id/apply", (req, res) => {
   const { name, email, phone, dob, coverletter } = req.body;
   const id = req.params.id;
@@ -49,23 +53,20 @@ app.post("/jobs/:id/apply", (req, res) => {
     from: `${process.env.FROM_EMAIL}`,
     to: `${process.env.TO_EMAIL}`,
     subject: `New application request for ${matchfound.title}`,
-    html: `
-    <h1>Jovian Form data</h1>
-      <p><strong>Name : </strong>${name} </p>
-      <p><strong>Email : </strong>${email} </p>
-      <p><strong>Phone : </strong>${phone} </p>
-      <p><strong>Date of Birth : </strong>${dob} </p>
-      <p><strong>Cover Letter : </strong>${coverletter} </p>
-      `,
+    html: `<h1>Jovian Form data</h1><p><strong>Name : </strong>${name} </p><p><strong>Email : </strong>${email} </p><p><strong>Phone : </strong>${phone} </p><p><strong>Date of Birth : </strong>${dob} </p><p><strong>Cover Letter : </strong>${coverletter} </p>`,
   };
 
+  const response = {
+    formRes: req.body,
+    job: matchfound,
+  };
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.error("Email sending failed:",error.response);
-      res.status(500).render("error",{job:matchfound});
+      console.error("Email sending failed:", error.responce);
+      res.status(500).render("error", { resp:response });
     } else {
       console.log("Email sent: " + info.response);
-      res.status(200).render("applied",{job:matchfound});
+      res.status(200).render("applied", { resp: response });
     }
   });
 });

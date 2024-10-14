@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,44 +13,20 @@
     <div class="container-md">
       <!-- logo -->
       <a class="navbar-brand" href="/">
-        <img
-          alt="Jovian Logo"
-          src="../images/m1wXjqw.png"
-          height="30"
-          class="d-none d-sm-inline"
-        />
-        <img
-          alt="Jovian Logo"
-          src="../images/JRA5Q8a.png"
-          height="30"
-          class="d-sm-none"
-        />
+        <img alt="Jovian Logo" src="../images/m1wXjqw.png" height="30" class="d-none d-sm-inline" />
+        <img alt="Jovian Logo" src="../images/JRA5Q8a.png" height="30" class="d-sm-none" />
       </a>
 
       <!-- toggle button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarSupportedContent"
-      >
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="nav">
           <li class="nav-item">
-            <a
-              class="nav-link"
-              aria-current="page"
-              href="https://www.youtube.com/@BotChinu"
-              >YouTube
+            <a class="nav-link" aria-current="page" href="https://www.youtube.com/@BotChinu">YouTube
             </a>
           </li>
           <li class="nav-item">
@@ -67,17 +42,36 @@
 
   <!--APPLICATION FORM-->
   <div class="container px-4 mt-5">
-    <h1 class="text-center">Apply - {{job.title}}</h1>
-    <div class="text-center mb-5">
-      {{job.location}} • {{job.salary}} • Posted on {{job.posted}}
+    <h1 class="text-center">Apply - {{resp.job.title}}</h1>
+    <div class="text-center mb-4">
+      {{resp.job.location}} • {{resp.job.salary}} • Posted on {{resp.job.posted}}
     </div>
 
     <div class="container text-center">
-      Your requerst for {{job.title}} Application has been submitted
-      <div class="mx-auto mb-5">
+      Your request for {{resp.job.title}} Application has been submitted
+      <div class="px-20 mt-4">
+        <h3 class="mb-5">Form Submission Preview</h3>
+        <div class="text-start offset-lg-2 col-lg-8">
+          <p class="mx-20"><strong>Name : </strong>
+            {{resp.formRes.name}}
+          </p>
+          <p class="mx-20"><strong>Email : </strong>
+            {{resp.formRes.email}}
+          </p>
+          <p class="mx-20"><strong>Phone: </strong>
+            {{resp.formRes.phone}}
+          </p>
+          <p class="mx-20"><strong>Date of Birth: </strong>
+            {{resp.formRes.dob}}
+          </p>
+          <p class="mx-20">
+            <strong>Cover Letter :</strong>
+            {{resp.formRes.coverletter}}
+          </p>
+        </div>
 
-        <a class="btn btn-primary" href="/">Back to Home</a>
       </div>
+      <a class="btn btn-primary mt-3" href="/">Back to Home</a>
     </div>
 
   </div>
