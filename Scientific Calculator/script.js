@@ -1,9 +1,9 @@
 const display = document.querySelector("input");
-let c = '';
+let c = "";
 const btn = document.querySelectorAll(".btn").forEach((item) => {
-  display.value = ''
+  display.value = "";
   item.addEventListener("click", () => {
-    if (item.innerHTML === 'AC') {
+    if (item.innerHTML === "AC") {
       display.value = "";
     }
     else if (item.innerHTML === '=') {
