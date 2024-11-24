@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "backend": "node \"Backend Movie Reviews/index.js\"",
-    "backend-debug": "nodemon \"Backend Movie Reviews/index.js\""
+    "backend-debug": "nodemon \"Backend Movie Reviews/index.js\"",
+    "fullstack":"node \"Full stack application/Backend Movie Reviews/index.js\"",
+    "fullstack-debug":"nodemon \"Full stack application/Backend Movie Reviews/index.js\""
   },
   "keywords": [],
   "author": "",
