@@ -16,7 +16,7 @@ export default class ReviewsController {
 
   static async apiDeleteReviews(req, res, next) {
     try {
-      const movieId = req.body.movieId;
+      const movieId = req.params.id;
       const deleteRequest = await ReviewsDAO.deleteReview(movieId);
       res.json({ status: "success" });
     } catch (e) {
