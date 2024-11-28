@@ -18,7 +18,7 @@ def play_game():
     )
 
     player = int(playerChoice)
-    if player not in [1, 2, 31]:
+    if player not in [1, 2, 3]:
         print("You Entered Wrong input\n Try with 1,2,3")
         return play_game()
 
