@@ -5,3 +5,4 @@
 3. [Updating Game with Recursion feature](https://youtu.be/qwAFL1597eM?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM&t=12768)
 4. [updating game with use of functions](https://youtu.be/qwAFL1597eM?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM&t=14130)
 5. [updating game with use of closure Feature](https://youtu.be/qwAFL1597eM?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM&t=15114)
+6. [updating Print statement with f-strings](https://youtu.be/qwAFL1597eM?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM&t=16682)
