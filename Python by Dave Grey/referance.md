@@ -7,3 +7,4 @@
 5. [updating game with use of closure Feature](https://youtu.be/qwAFL1597eM?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM&t=15114)
 6. [updating Print statement with f-strings](https://youtu.be/qwAFL1597eM?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM&t=16682)
 7. [Updating Game With Passing User as CLI](https://youtu.be/qwAFL1597eM?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM&t=18675)
+8. [Challenge for These learning](https://youtu.be/qwAFL1597eM?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM&t=19239)
