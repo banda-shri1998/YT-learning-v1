@@ -1,5 +1,6 @@
 import random
 from enum import Enum
+import sys
 
 
 def guess_number(name="PlayerOne"):
@@ -7,6 +8,7 @@ def guess_number(name="PlayerOne"):
 
     game_count = 0
     player_wins = 0
+    winning = 0
 
     def play_game():
 
@@ -39,6 +41,9 @@ def guess_number(name="PlayerOne"):
         game_count += 1
         gameResult(player, computer)
         print(f"\nPlayed {game_count} times\t{name} won {player_wins} times")
+        nonlocal winning
+        winning = (player_wins / game_count) * 100
+        print(f"winning Percentage: {winning:.2f}%")
 
         print(f"\nWant to play again, {name}?")
         while True:
@@ -54,7 +59,10 @@ def guess_number(name="PlayerOne"):
         else:
             print("\n!!! Thank you for Playing !!!")
             print("\nhave a good day")
-            return arcade.menu(name)
+            if __name__=='__main__':
+                sys.exit(f'Bye {name}')
+            else:
+                return arcade.menu(name)
 
     return play_game()
 

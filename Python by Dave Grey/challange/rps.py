@@ -75,7 +75,10 @@ def play_rps(name="PlayerOne"):
             return play_game()
         else:
             print("\n!!! Thank you for Playing !!!\nhave a good day")
-            return arcade.menu(name)
+            if __name__=='__main__':
+                sys.exit(f'Bye {name}')
+            else:
+                return arcade.menu(name)
 
     return play_game()
 
