@@ -9,3 +9,4 @@
 7. [Updating Game With Passing User as CLI](https://youtu.be/qwAFL1597eM?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM&t=18675)
 8. [Challenge for These learning](https://youtu.be/qwAFL1597eM?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM&t=19239)
 9. [Classes And Objects](https://youtu.be/qwAFL1597eM?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM&t=23251)
+10. [working with API using PIP and venv](https://youtu.be/qwAFL1597eM?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM&t=25036)
