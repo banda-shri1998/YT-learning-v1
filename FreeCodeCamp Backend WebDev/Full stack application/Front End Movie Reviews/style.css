@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #131720;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #131720;
+  padding: 10px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.topnav .search-bar {
+  float: right;
+}
+
+form {
+  background-color: #151f30;
+  width: 300px;
+  height: 43px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  all: unset;
+  font: 15px system-ui;
+  color: white;
+  height: 100%;
+  padding: 6px 9px;
+}
+
+input{
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  margin: 6px;
+  text-align: left;
+}
+
+
+
+p a{
+  background-color: cadetblue;
+  text-decoration: none;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.thumbnail {
+  height: 350px;
+  width: 300px;
+  border-radius: 19px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.card p{
+  padding: 0;
+  margin: 10px;
+}
+
+.card{
+  border-radius: 19px;
+  padding: 20px;
+  text-align: center;
+  background-color: #282a36 ;
+}

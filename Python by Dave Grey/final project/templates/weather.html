@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }} Weather</title>
+    <link
+      href="{{url_for('static',filename='styles/style.css')}}"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url("../static/styles/background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <a href="/index" style="text-decoration: none; color: white">
+        {{ title}} Weather
+      </a>
+    </h1>
+
+    <p>{{ status }} and {{temp}} &deg;C</p>
+    <p>Feels like {{feels_like}} &deg;C</p>
+
+    <form action="/weather">
+      <input type="text" name="city" id="city" placeholder="Enter city" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
